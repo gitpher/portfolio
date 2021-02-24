@@ -2,14 +2,16 @@
 :root {
   /* Color */
   --color-white: #ffffff;
-  --color-light-white: #eeeeee;
+  --color-light-white: #f5fcff;
   --color-dark-white: #bdbdbd;
   --color-blue: #2196f3;
   --color-dark-blue: #0173d1;
   --color-dark-grey: #353434;
   --color-grey: #616161;
   --color-light-grey: #79a1bb;
+  --color-light-purple: #f2f1fc;
   --color-another-blue: #29b6f6;
+  --color-light-blue: #c9e5fa;
   --color-yellow: #fdf9be;
   --color-orange: #ffaf37;
   --color-black: #000000;
@@ -159,6 +161,10 @@ p {
 .section {
   padding: 50px;
   text-align: center;
+  margin: auto;
+}
+
+.section__container {
   max-width: 1200px;
   margin: auto;
 }
@@ -224,4 +230,55 @@ p {
 
 .personalhistory__period {
   font-size: var(--font-micro);
+}
+
+/* Skill */
+
+#skills {
+  background-color: var(--color-light-blue);
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-white);
+  margin: 20px 0;
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-white);
+  padding: 20px 40px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill {
+  margin-bottom: 8px;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-light-grey);
+}
+
+.skill__value {
+  height: 4px;
+  background-color: var(--color-orange);
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: var(--color-light-purple);
+}
+
+.tools,
+.etc {
+  padding: 20px;
 }
