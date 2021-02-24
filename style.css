@@ -8,7 +8,7 @@
   --color-dark-blue: #0173d1;
   --color-dark-grey: #353434;
   --color-grey: #616161;
-  --color-light-grey: #73aace;
+  --color-light-grey: #79a1bb;
   --color-another-blue: #29b6f6;
   --color-yellow: #fdf9be;
   --color-orange: #ffaf37;
@@ -28,6 +28,9 @@
 
   /* Size */
   --size-border-radius: 8px;
+
+  /* Animation */
+  --animation-duration: 250ms;
 }
 
 /* Universal tags */
@@ -39,6 +42,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   cursor: default;
+  color: var(--color-dark-grey);
 }
 
 a {
@@ -62,7 +66,7 @@ button {
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-  color: var(--color-black);
+  color: var(--color-dark-grey);
   margin: 16px 0;
 }
 
@@ -149,4 +153,75 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-grey);
   border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  font-size: 80px;
+  color: var(--color-dark-blue);
+  line-height: 170px;
+  width: 170px;
+  height: 170px;
+  margin: auto;
+  border: 1px solid var(--color-another-blue);
+  border-radius: 50%;
+  margin-bottom: 18px;
+}
+
+.major__icon i {
+  transition: var(--animation-duration);
+}
+
+.major__icon:hover i {
+  color: var(--color-another-blue);
+  transform: scale(1.1);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.about__personalhistory {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.personalhistory__logo {
+  margin: 0 16px;
+  text-align: left;
+  width: 50px;
+  height: 50px;
+}
+
+.personalhistory__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.personalhistory__name,
+.personalhistory__period {
+  color: var(--color-light-grey);
+}
+
+.personalhistory__name {
+  font-size: var(--font-small);
+}
+
+.personalhistory__period {
+  font-size: var(--font-micro);
 }
