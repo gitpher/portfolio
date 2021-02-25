@@ -357,7 +357,7 @@ p {
   justify-content: center;
   align-items: center;
   width: 280px;
-  height: 250px;
+  height: 280px;
   margin: 2px;
 }
 
@@ -466,6 +466,32 @@ p {
 .contact__links i:hover {
   color: var(--color-light-blue);
   transition: all var(--animation-duration);
+}
+
+/* Scroll */
+.arrow-up {
+  color: var(--color-dark-grey);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 50px;
+  width: 70px;
+  height: 70px;
+  border: solid var(--color-dark-grey);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 250ms ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 0.3;
+  transition: var(--animation-duration);
+  pointer-events: auto;
+}
+
+.arrow-up.visible:hover {
+  opacity: 0.6;
 }
 
 /* For below 768px screen width */
