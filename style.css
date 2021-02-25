@@ -17,6 +17,7 @@
   --color-orange: #ffaf37;
   --color-light-orange: #f0be74;
   --color-black: #000000;
+  --color-light-blue: #f5fcff;
 
   /* Font size */
   --font-large: 48px;
@@ -174,6 +175,10 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-grey);
   border-radius: var(--size-border-radius);
+}
+
+.home__contact:hover {
+  background-color: var(--color-light-blue);
 }
 
 /* Section common */
