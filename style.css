@@ -105,6 +105,7 @@ p {
   align-items: center;
   color: var(--color-white);
   padding: 3px 16px 3px 16px;
+  z-index: 1;
 }
 
 #navbar.navbar--scroll {
