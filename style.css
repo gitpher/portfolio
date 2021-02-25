@@ -97,12 +97,18 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: var(--color-blue);
   align-items: center;
   color: var(--color-white);
   padding: 3px 16px 3px 16px;
+}
+
+#navbar.navbar--scroll {
+  background-color: var(--color-blue);
 }
 
 .navbar__menu {
@@ -143,6 +149,7 @@ p {
 #home {
   background: url("imgs/home-background.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 150px;
   text-align: center;
 }
 
