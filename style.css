@@ -579,9 +579,12 @@ p {
     flex-direction: column;
   }
 
+  .work__categories {
+    margin-right: 22px;
+  }
+
   .category__btn {
     margin: 4px;
-    right: 6px;
     width: 100%;
   }
 
