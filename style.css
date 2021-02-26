@@ -154,6 +154,7 @@ p {
   font-size: 24px;
   color: var(--color-white);
   display: none;
+  padding: 3px 8px 3px 8px;
 }
 
 /* Home */
@@ -555,7 +556,7 @@ p {
 
   .navbar__toggle-btn {
     font-size: var(--font-medium-big);
-    top: 9.6px;
+    top: 8px;
   }
 
   .section {
