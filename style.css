@@ -556,7 +556,7 @@ p {
 
   .navbar__toggle-btn {
     font-size: var(--font-medium-big);
-    top: 8px;
+    top: 4px;
   }
 
   .section {
