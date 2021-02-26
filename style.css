@@ -149,7 +149,7 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 8.05px;
+  top: 5.05px;
   right: 13px;
   font-size: 24px;
   color: var(--color-white);
