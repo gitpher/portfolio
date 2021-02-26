@@ -90,6 +90,13 @@ h3 {
   margin: 8px 0;
 }
 
+h4 {
+  font-size: var(--font-micro);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
 p {
   font-size: var(--font-regular);
   font-weight: var(--font-regular);
@@ -128,8 +135,11 @@ p {
   margin: 0 8px;
   font-size: var(--font-regular);
   cursor: pointer;
-  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
 }
 
 .navbar__menu__item:hover {
@@ -457,10 +467,6 @@ p {
 /* Contact */
 #contact {
   background-color: var(--color-dark-blue);
-}
-
-.contact__container {
-  padding-bottom: 28px;
 }
 
 .contact__title,
