@@ -105,9 +105,9 @@ const navItems = sectionIds.map(id =>
 let selectedNavIndex = 0;
 let selectedNavItem = navItems[0];
 function selectNavItem(selected) {
-selectedNavItem.classList.remove('active');
-selectedNavItem = selected;
-selectedNavItem.classList.add('active');
+    selectedNavItem.classList.remove('active');
+    selectedNavItem = selected;
+    selectedNavItem.classList.add('active');
 }
 
 function scrollIntoView(selector) {
@@ -117,9 +117,9 @@ function scrollIntoView(selector) {
 }
 
 const observerOptions = {
-root: null,
-rootMargin: '0px',
-threshold: 0.3,
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3,
 };
 
 const observerCallback = (entries, observer) => {
@@ -141,7 +141,7 @@ sections.forEach(section => observer.observe(section));
 window.addEventListener('wheel', () => {
     if(window.scrollY === 0) {
         selectedNavIndex = 0;
-    } else if (window.scrollY + window.innerHeight === document.body.clientHeight) {
+    } else if (window.scrollY + window.innerHeight == document.body.clientHeight) {
         selectedNavIndex = navItems.length - 1;
     }
     selectNavItem(navItems[selectedNavIndex]);
