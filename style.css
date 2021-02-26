@@ -154,6 +154,7 @@ p {
   font-size: 28px;
   color: var(--color-white);
   display: none;
+  padding: 3px 11px 3px 11px;
 }
 
 /* Home */
